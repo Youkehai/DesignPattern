@@ -21,8 +21,27 @@ package com.ykh.designmodel.flyweight;
  * 1) 享元模式提出了两个要求: 细粒度和共享对象。这里就涉及到内部状态和外部状态了，即将对象的信息分为两个部分: 内部状态和外部状态。
  * 2) 内部状态指对象共享出来的信息，存储在享元对象内部且不会随环境的改变而改变。
  * 3) 外部状态指对象得以依赖的一个标记，是随环境改变而改变的、不可共享的状态。
- * 4）举个例子:围棋理论上有361个空位可以放棋子，每盘棋都有可能有两三百个棋子对4)象产生，因为内存空间有限，
+ * 4）举个例子:围棋理论上有361个空位可以放棋子，每盘棋都有可能有两三百个棋子对象产生，因为内存空间有限，
  * 一台服务器很难支持更多的玩家玩围棋游戏，如果用享元模式来处理棋子，那么棋子对象就可以减少到只有两个实例，这样就很好的解决了对象的开销问题
  */
 public class Flyweight {
+
+    public static void main(String[] args) {
+        //type表示内部状态，user表示外部状态
+        //创建一个工厂
+        WebSiteFactory webSiteFactory = new WebSiteFactory();
+        //现在需要一个新闻形式的网站
+        WebSite xw1= webSiteFactory.getWebsiteByCategory("新闻");
+        xw1.use(new User().setName("小明"));
+        //现在其他客户需要一个博客形式的网站
+        WebSite bk1 = webSiteFactory.getWebsiteByCategory("博客");
+        bk1.use(new User().setName("小红"));
+        //又需要一个博客
+        WebSite bk2 = webSiteFactory.getWebsiteByCategory("博客");
+        bk2.use(new User().setName("小张"));
+        //又需要新闻
+        WebSite xw2= webSiteFactory.getWebsiteByCategory("新闻");
+        xw2.use(new User().setName("小鸡"));
+        System.out.println("现有的网站类型数量："+webSiteFactory.getWebsiteCount());
+    }
 }
