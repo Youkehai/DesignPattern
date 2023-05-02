@@ -10,7 +10,7 @@ package com.ykh.designmodel.proxy.dynamicproxy;
  * 2. JDK实现代理只需要使用 newProxyInstance 方法,但是该方法需要接收三个参数完整的写法是:
  *    static Object newProxyInstance(ClassLoader loader, Class<?>[interfaces,InvocationHandler h)
  */
-public class DynamicProxy {
+public class DynamicProxyITest {
     public static void main(String[] args) {
         //创建目标对象
         TeacherDao target = new TeacherDao();

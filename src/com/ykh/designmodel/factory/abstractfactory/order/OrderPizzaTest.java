@@ -7,7 +7,7 @@ import com.ykh.designmodel.factory.abstractfactory.pizza.Pizza;
 /**
  * 披萨订购的工厂父类
  */
-public class OrderPizza {
+public class OrderPizzaTest {
 
     AbstractFactory abstractFactory;
 
@@ -19,7 +19,7 @@ public class OrderPizza {
      * abstractFactory为具体实现类
      * @param abstractFactory
      */
-    public OrderPizza(AbstractFactory abstractFactory){
+    public OrderPizzaTest(AbstractFactory abstractFactory){
         this.abstractFactory = abstractFactory;
     }
 
@@ -32,8 +32,8 @@ public class OrderPizza {
     }
 
     public static void main(String[] args) {
-        OrderPizza orderPizza = new OrderPizza(new BJFactory());
-        orderPizza.usePizza("cheese");
+        OrderPizzaTest orderPizzaTest = new OrderPizzaTest(new BJFactory());
+        orderPizzaTest.usePizza("cheese");
     }
 
 

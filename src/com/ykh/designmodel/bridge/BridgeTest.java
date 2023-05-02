@@ -17,7 +17,7 @@ package com.ykh.designmodel.bridge;
  *   MysQL有自己的ConnectionImpl类，同样oracle也有对应的实现类
  *   Driver和connection之间是通过DriverManager类进行桥连接的
  */
-public class Bridge {
+public class BridgeTest {
 
     public static void main(String[] args) {
         //获取折叠屏小米手机

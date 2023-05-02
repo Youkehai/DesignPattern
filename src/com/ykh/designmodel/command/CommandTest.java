@@ -19,7 +19,7 @@ import com.ykh.designmodel.command.tv.TvReceiver;
  * 5. 空命令也是一种设计模式，它为我们省去了判空的操作。在上面的实例中，如果没有用空命令，我们每按下一个按键都要判空，这给我们编码带来一定的麻烦。
  * 6. 命令模式经典的应用场景:界面的一个按钮都是一条命令、模拟CMD(DOS命令)订单的撤销/恢复、触发-反馈机制
  */
-public class Command {
+public class CommandTest {
 
     public static void main(String[] args) {
         //创建receiver，实际执行者

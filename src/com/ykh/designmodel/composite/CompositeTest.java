@@ -24,7 +24,7 @@ package com.ykh.designmodel.composite;
  *   static class Node<K,V> implements Map.Entry<K,V>
  *   @see Department
  */
-public class Composite {
+public class CompositeTest {
 
     public static void main(String[] args) {
         //从大到小创建对象

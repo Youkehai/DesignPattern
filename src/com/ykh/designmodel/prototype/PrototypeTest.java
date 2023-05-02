@@ -3,7 +3,7 @@ package com.ykh.designmodel.prototype;
 /**
  * 原型模式测试客户端类
  */
-public class Client {
+public class PrototypeTest {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         Prototype prototype=new Prototype("小张","黄",10);

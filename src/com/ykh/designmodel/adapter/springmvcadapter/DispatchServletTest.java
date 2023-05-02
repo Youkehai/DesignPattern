@@ -7,11 +7,11 @@ import java.util.List;
  * 1.Spring定义了一个适配接口，使得每一种Controller有一种对应的适配器实现类适配器代替controller执行相应的方法
  * 2.扩展Controller 时，只需要增加一个适配器类就完成了SpringMVC的扩展了
  */
-public class DispatchServlet {
+public class DispatchServletTest {
 
     public static List<HandlerAdapter> handlerAdapterList = new ArrayList<>();
 
-    public DispatchServlet() {
+    public DispatchServletTest() {
         handlerAdapterList.add(new AnnotationHandlerAdapter());
         handlerAdapterList.add(new HttpHandlerAdapter());
         handlerAdapterList.add(new SimpleHandlerAdapter());
@@ -43,6 +43,6 @@ public class DispatchServlet {
     }
 
     public static void main(String[] args) {
-        new DispatchServlet().doDispatch();
+        new DispatchServletTest().doDispatch();
     }
 }

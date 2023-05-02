@@ -3,7 +3,7 @@ package com.ykh.designmodel.decorator;
 /**
  * 测试装饰者模式
  */
-public class Client {
+public class DecoratorTest {
 
     public static void main(String[] args) {
 

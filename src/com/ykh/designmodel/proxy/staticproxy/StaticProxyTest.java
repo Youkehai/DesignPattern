@@ -15,7 +15,7 @@ package com.ykh.designmodel.proxy.staticproxy;
  * 2.缺点:因为代理对象需要与目标对象实现一样的接口,所以会有很多代理类
  * 3.一旦接口增加方法,目标对象与代理对象都要维护
  */
-public class StaticProxy {
+public class StaticProxyTest {
 
     public static void main(String[] args) {
         //被代理对象

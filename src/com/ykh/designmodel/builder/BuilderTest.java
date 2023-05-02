@@ -3,7 +3,7 @@ package com.ykh.designmodel.builder;
 /**
  * 测试建造者模式
  */
-public class Client {
+public class BuilderTest {
     public static void main(String[] args) {
         //构建子类1
         ConcreteProductBuilder concreteProductBuilder = new ConcreteProductBuilder();

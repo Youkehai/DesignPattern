@@ -24,7 +24,7 @@ package com.ykh.designmodel.flyweight;
  * 4）举个例子:围棋理论上有361个空位可以放棋子，每盘棋都有可能有两三百个棋子对象产生，因为内存空间有限，
  * 一台服务器很难支持更多的玩家玩围棋游戏，如果用享元模式来处理棋子，那么棋子对象就可以减少到只有两个实例，这样就很好的解决了对象的开销问题
  */
-public class Flyweight {
+public class FlyweightTest {
 
     public static void main(String[] args) {
         //type表示内部状态，user表示外部状态

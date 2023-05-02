@@ -10,7 +10,7 @@ package com.ykh.designmodel.proxy.cglib;
  *    2.目标对象不需要实现接口，用Cglib代理
  * 5. Cglib包的底层是通过使用字节码处理框架ASM来转换字节码并生成新的类
  */
-public class CglibProxy {
+public class CglibProxyITest {
 
     public static void main(String[] args) {
         TeacherDao target = new TeacherDao();

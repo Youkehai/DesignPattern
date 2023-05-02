@@ -15,7 +15,7 @@ import com.ykh.designmodel.template.pro.PureSoybeanMilk;
  * 5. 一般模板方法都加上final关键字， 防止子类重写模板方法
  * 6. 模板方法模式使用场景:当要完成在某个过程，该过程要执行一系列步骤，这一系列的步骤基本相同，但其个别步骤在实现时 可能不同，通常考虑用模板方法模式来处理
  */
-public class Template {
+public class TemplateTest {
 
     public static void main(String[] args) {
         System.out.println("红豆豆浆");

@@ -18,7 +18,7 @@ package com.ykh.designmodel.adapter.classadapter;
  * 2.src类的方法在Adapter中都会暴露出来，也增加了使用的成本。
  * 3.由于其继承了src类，所以它可以根据需求重写src类的方法，使得Adapter的灵活性增强了。
  */
-public class AdapterPattern {
+public class AdapterPatternTest {
 
     public static void main(String[] args) {
         System.out.println("类适配器模式");

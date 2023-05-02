@@ -12,7 +12,7 @@ import java.util.List;
  * 3.{@link ArrayList}实现了聚合接口List
  * 迭代器模式解决了不同集合（数组，链表等），统一遍历的问题
  */
-public class Iterator {
+public class IteratorTest {
 
     public static void main(String[] args) {
         //创建学院

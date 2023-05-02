@@ -16,7 +16,7 @@ import com.ykh.designmodel.visitor.action.Wait;
  * 2. 违背了依赖倒转原则。访问者依赖的是具体元素，而不是抽象元素
  * 3. 因此，如果一个系统有比较稳定的数据结构，又有经常变化的功能需求，那么访问者模式就是比较合适的.
  */
-public class Visitor {
+public class VisitorTest {
 
     public static void main(String[] args) {
         //创建 objectStruct

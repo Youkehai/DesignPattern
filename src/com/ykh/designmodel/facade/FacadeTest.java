@@ -18,7 +18,7 @@ package com.ykh.designmodel.facade;
  * 外观模式在Mybatis中的应用
  * MyBatis 中的Configuration 去创建MetaObject 对象使用到外观模式
  */
-public class Facade {
+public class FacadeTest {
 
     //外观模式，
     // 1.定义各个子系统对象
@@ -29,7 +29,7 @@ public class Facade {
     private Stereo stereo;
     private TheaterLight theaterLight;
 
-    public Facade() {
+    public FacadeTest() {
         this.dvdPlayer = DvdPlayer.getInstance();
         this.popcorn = Popcorn.getInstance();
         this.projector = Projector.getInstance();
@@ -75,9 +75,9 @@ public class Facade {
         //需要dvd 爆米花 投影仪 投影仪屏幕 立体音效 灯光一个个全部打开
         //如果不使用外观模式，需要一个个类去创建并调用 很麻烦
         //使用外观类，分步骤
-        Facade facade=new Facade();
-        facade.ready();
-        facade.play();
-        facade.end();
+        FacadeTest facadeTest =new FacadeTest();
+        facadeTest.ready();
+        facadeTest.play();
+        facadeTest.end();
     }
 }

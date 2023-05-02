@@ -1,13 +1,10 @@
 package com.ykh.designmodel.factory.simplefactory;
 
-import com.ykh.designmodel.factory.simplefactory.pizza.CheesePizza;
-import com.ykh.designmodel.factory.simplefactory.pizza.GreekPizza;
-import com.ykh.designmodel.factory.simplefactory.pizza.PepperPizza;
 import com.ykh.designmodel.factory.simplefactory.pizza.Pizza;
 
-public class OrderPizza {
+public class OrderPizzaTest {
 
-    public OrderPizza(){
+    public OrderPizzaTest(){
         setSimpleFactory(new SimpleFactory());
     }
     //简单工厂对象
@@ -23,7 +20,7 @@ public class OrderPizza {
         return pizza;
     }
     public static void main(String[] args) {
-        OrderPizza orderPizza = new OrderPizza();
-        orderPizza.createPizza("cheese");
+        OrderPizzaTest orderPizzaTest = new OrderPizzaTest();
+        orderPizzaTest.createPizza("cheese");
     }
 }
